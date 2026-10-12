@@ -1,0 +1,14 @@
+name: はじめての自動化
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: メッセージを表示
+        run: |
+          echo "自動化に成功しました！"
+          echo "実行日時：$(date)"
